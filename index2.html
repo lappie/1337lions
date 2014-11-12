@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>1337 Lions TEST</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="themes/ing-style-v2.css">
+</head>
+<body>
+
+	<div data-role="page" >
+	
+		<div data-role="panel" id="mypanel" data-theme="b">
+			<p>Button a</p>
+			<p>Button b</p>
+		</div><!-- /panel -->
+		
+		<div data-role="header" data-position="fixed">
+			<a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Home</a>
+			<h1>Payment invites</h1>
+			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+		</div>
+		
+		<div class="ui-content">
+			<div class="ui-container">
+				
+				<div class="pi-menu-filter">
+					<div  data-role="navbar">
+						<ul>
+							<a href="#" class="ui-btn-active">All</a>
+							<a href="#">Not sent</a>
+							<a href="#">Sent</a>		
+							<a href="#">Paid</a>	
+							<a href="#">Declined</a>	
+						</ul>
+					</div>
+				</div>
+			
+				<div class="pi-block pi-block-status-notscheduled" onclick="window.location.href = '#payment'">
+					<h3 class="pi-block-name">P. Jansen</h3>
+					<span class="date">11-11-2014</span>
+					<h3 class="pi-block-amount">&euro; 369,-</h3>
+					<span class="pi-block-status">Not scheduled</span>
+				</div>
+				
+				<div class="pi-block pi-block-status-notscheduled" onclick="#payment">
+					<h3 class="pi-block-name">P. Jansen</h3>
+					<span class="date">11-11-2014</span>
+					<h3 class="pi-block-amount">&euro; 369,-</h3>
+					<span class="pi-block-status">Not scheduled</span>
+				</div>
+				
+				<div class="pi-block pi-block-status-notscheduled" onclick="#payment">
+					<h3 class="pi-block-name">P. Jansen</h3>
+					<span class="date">11-11-2014</span>
+					<h3 class="pi-block-amount">&euro; 369,-</h3>
+					<span class="pi-block-status">Not scheduled</span>
+				</div>
+				
+				<div class="pi-block pi-block-status-notscheduled" onclick="#payment">
+					<h3 class="pi-block-name">P. Jansen</h3>
+					<span class="date">11-11-2014</span>
+					<h3 class="pi-block-amount">&euro; 369,-</h3>
+					<span class="pi-block-status">Not scheduled</span>
+				</div>
+			</div><!-- ui-container -->
+		</div><!-- content -->
+		
+		<div data-role="footer" data-position="fixed">
+			<a class="ui-btn" style="width: 100%">New Payment Invite</a>
+		</div>
+	
+	</div> <!-- page -->
+</body>
+</html>

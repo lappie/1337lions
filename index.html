@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>1337 Lions TEST</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+</head>
+<body>
+	
+	
+	<div data-role="page">
+
+		<button class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" data-icon="demos/icons-png/bars-black.png"><a href="#mypanel"></a></button>
+		<h1>Test</h1>
+		<div  data-role="navbar">
+		
+			<ul>
+				<a href="#" class="ui-btn-active">Home</a>
+				<a href="#">Iets</a>
+				<a href="#">Anders</a>		
+			</ul>
+		</div>
+		
+		<div id="here"></div>
+	
+		<div data-role="panel" id="mypanel">
+			<p>Button a</p>
+			<p>Button b</p>
+		</div><!-- /panel -->
+	
+		<a href="#mypanel" value="x">Panel</a>
+		
+		<div data-role="footer"> 
+			<hr />
+			<em>Footer</em>
+		</div>
+	</div><!-- page -->
+	
+
+	<script>
+		$("#here").load("loaded.html");
+	</script>
+</body>
+</html>
