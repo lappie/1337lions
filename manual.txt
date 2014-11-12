@@ -1,0 +1,10 @@
+Ugly hack to make loading of local files possible. 
+WARNING: Disable this after the Hackathon
+
+
+Firefox
+In the address bar type in "about:config"
+Set the "Security.fileuri.strict_origin_policy" to false
+( see: http://kb.mozillazine.org/Security.fileuri.strict_origin_policy )
+Chrome
+Load chrome with the "--allow-file-access-from-files" command line flag set
