@@ -1,0 +1,79 @@
+#account-data {
+	height: 30px; 
+	width: 698px; 
+	margin: 0px auto; 
+}
+
+#account-data-name {
+	width: 500px; 
+	position: absolute; 
+	top: 0px; 
+	left: 10px; 
+	height: 25px; 
+	font-size: 18px; 
+}
+
+#account-data-account {
+	width: 500px; 
+	float: left; 
+	color: orange; 
+	position: absolute; 
+	top: 25px; 
+	left: 10px; 
+	font-size: 14px; 
+}
+
+#account-data-total {
+	width: 120px; 
+	position: absolute; 
+	right: 0px; 
+	top: 0px; 
+	font-size: 22px; 
+	font-weight: bold; 
+}
+
+#account-data-total-extrapolated {
+	width: 190px; 
+	position: absolute; 
+	right: 0px; 
+	top: 30px; 
+	font-size: 10px; 
+}
+
+
+/***********************************************/
+#invite-payment-form img {
+	
+}
+
+#transaction-list  h3 { /* Title */ 
+	font-size: 1.5em; 
+	margin: 5px; 
+}
+
+#transaction-list h2 { /* money */
+	font-size: 2em; 
+	position: absolute; 
+	width: 80px; 
+	right: 0px; 
+}
+
+#transaction-list  h4 { /* Euro money */
+	position: absolute; 
+	right: 0px; 
+	width: 80px; 
+	top: 20px; 
+}
+
+.span-underline{ /* Location */
+	font-size: 0.9em; 
+	border-bottom: 1px dashed #999;
+	text-decoration: none; 
+}
+
+/***********************************/
+
+span .decimals {
+	font-size: 10px; 
+	color: red; 
+}

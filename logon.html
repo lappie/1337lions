@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>1337 Lions TEST</title>
+	<style>
+		 html, body {
+			margin: 0px; 
+			padding: 0px; 
+		 }
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<img id="screen" src="img/ing-login.png" width="698" />
+	
+	<script>
+		var i = 0; 
+		$( "body" ).keypress(function() {
+			i++; 
+			console.log(i);
+			$("#screen").attr("src", "img/ing-login" + i + ".png"); 
+		  
+		});
+	</script>
+</body>
+</html>
