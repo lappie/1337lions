@@ -7,18 +7,39 @@
 			padding: 0px; 
 		 }
 	</style>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	
+	<link rel="stylesheet" href="style/invite-overview.css">
+	<link rel="stylesheet" href="style/invite-payment.css">
+	
+	<link rel="stylesheet" href="themes/ing-style-v2.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/transactions-list.css">
 </head>
 <body>
 	<img id="screen" src="img/ing-login.png" width="698" />
 	
 	<script>
 		var i = 0; 
+		var load = false;
 		$( "body" ).keypress(function() {
-			i++; 
-			console.log(i);
-			$("#screen").attr("src", "img/ing-login" + i + ".png"); 
-		  
+		  	if(i>=5 && load == false) {
+		  		load = true;
+		  		setTimeout(function() { 
+		  			console.log("load");
+		  			$.mobile.changePage("index2.html", { transition: "slide" });
+		  		}, 1000);
+		  	}
+		  	else if (i<5) {
+				i++; 
+				console.log(i);
+				$("#screen").attr("src", "img/ing-login" + i + ".png"); 
+		  	}
 		});
 	</script>
 </body>
