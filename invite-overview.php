@@ -41,52 +41,60 @@
 						"lastName": "Jansen",
 						"date": "11-11-2014",
 						"amount": "369.00",
-						"status": "Invited"			// Style (in css) for given status (lowercase) should exist
+						"status": "Awaiting Payment",			// Style (in css) for given status (lowercase) should exist
+						"avatar": "img/avatars/1.png"
 					},
 					{
-						"firstName": "J.",
+						"firstName": "H.",
 						"lastName": "Smit",
 						"date": "11-11-2014",
 						"amount": "1.00",
-						"status": "Paid"			// Style (in css) for given status (lowercase) should exist
+						"status": "Paid",			// Style (in css) for given status (lowercase) should exist
+						"avatar": "img/avatars/2.png"
 					},
 					{
 						"firstName": "H.",
 						"lastName": "de Vries",
 						"date": "09-11-2014",
 						"amount": "1.00",
-						"status": "Paid"
+						"status": "Paid",
+						"avatar": "img/avatars/3.png"
 					},
 					{
-						"firstName": "J.",
-						"lastName": "Smit",
+						"firstName": "K.",
+						"lastName": "Bloemen",
 						"date": "01-11-2014",
 						"amount": "1.00",
-						"status": "Invited"
+						"status": "Awaiting Payment",
+						"avatar": "img/avatars/4.png"
 					},
 					{
 						"firstName": "J.",
 						"lastName": "Smit",
 						"date": "03-09-2014",
 						"amount": "1.00",
-						"status": "Invited"
+						"status": "Awaiting Payment",
+						"avatar": "img/avatars/3.png"
 					},
 					{
 						"firstName": "J.",
 						"lastName": "Smit",
 						"date": "05-10-2014",
 						"amount": "1.00",
-						"status": "Invited"
+						"status": "Awaiting Payment",
+						"avatar": "img/avatars/3.png"
 					},
 					{
 						"firstName": "J.",
 						"lastName": "Smit",
 						"date": "08-11-2014",
 						"amount": "1.00",
-						"status": "Paid"
+						"status": "Paid",
+						"avatar": "img/avatars/3.png"
 					}
 				];
 			};
+
 
 			var parent = document.getElementById("invite-overview");
 			var paymentInvites = getPaymentInvites();
@@ -97,11 +105,13 @@
 			  	block = document.createElement('div');
 			  	block.setAttribute("class","pi-block-wrapper");
 			  	block.innerHTML = '<div class="pi-block pi-block-status-'+paymentInvite.status.toLowerCase()+'" onclick="window.location.href = \'#payment\'">'
-				  						+'<h3 class="pi-block-name">'+paymentInvite.firstName+' '+paymentInvite.lastName+'</h3>'
-				  						+'<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="pi-block-cancel" >x</a>'
-				  						+'<h5 class="pi-block-date">'+paymentInvite.date+'</h5>'
+				  						+'<div class="pi-block-name" style="float: left; margin-left: 10px; margin-bottom: 25px">'
+										+'<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="pi-block-cancel" style="margin-top: -12px; margin-right: -8px">X</a>'
+				  						+'<img src="' + paymentInvite.avatar + '" style="border: 1px solid #222222; width: 100px; height: 100px; float: left" /><h4 style="float: left; margin: 0 0; margin-left: 10px; ">'+paymentInvite.firstName+' '+paymentInvite.lastName+'</h4>'
+				  						+'<h5 class="pi-block-date" style="float: left; margin-left: 10px; margin-top: 0">'+paymentInvite.date+'</h5></div>'
+				  						+'<span style="clear: both"><br>'
 				  						+'<h3 class="pi-block-amount">&euro; '+paymentInvite.amount+'</h3>'
-				  						+'<h5 class="pi-block-status">'+paymentInvite.status+'</h5>'
+				  						+'<h5 class="pi-block-status">'+paymentInvite.status+'</h5></span>'
 				  					+
 				  					'</div>';
 			  	
