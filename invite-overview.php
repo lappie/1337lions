@@ -1,3 +1,4 @@
+
 <?php 
 	require("INC-header.html");
 ?>
@@ -19,6 +20,7 @@
 		<div data-role="footer" data-position="fixed">
 			<a class="ui-btn" style="width: 100%" data-transition="slideup" onclick="$('.ui-container').load('sent-invite.php')">New Payment Invite</a>
 		</div>
+
 		<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
 			<div data-role="header" data-theme="a">
 			<h1>Delete Invite?</h1>
@@ -29,8 +31,9 @@
 				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow" onclick="console.log(popupFor)">Yes</a>
 			</div>
 		</div>
+
 		<script>
-			/* Everything within data-role is used by jquery mobile*/
+			/* Everything within data-role is used by jquery mobile. Therefore, this script should be within the data-role div */
 			getPaymentInvites = function () {
 				return [
 					{
@@ -38,21 +41,21 @@
 						"lastName": "Jansen",
 						"date": "11-11-2014",
 						"amount": "369.00",
-						"status": "Invited"
+						"status": "Invited"			// Style (in css) for given status (lowercase) should exist
 					},
 					{
 						"firstName": "J.",
 						"lastName": "Smit",
 						"date": "11-11-2014",
 						"amount": "1.00",
-						"status": "Payed"
+						"status": "Paid"			// Style (in css) for given status (lowercase) should exist
 					},
 					{
 						"firstName": "H.",
 						"lastName": "de Vries",
 						"date": "09-11-2014",
 						"amount": "1.00",
-						"status": "Payed"
+						"status": "Paid"
 					},
 					{
 						"firstName": "J.",
@@ -80,21 +83,29 @@
 						"lastName": "Smit",
 						"date": "08-11-2014",
 						"amount": "1.00",
-						"status": "Payed"
+						"status": "Paid"
 					}
 				];
 			};
 
 			var parent = document.getElementById("invite-overview");
-			piBlocks = document.createElement('div');
-			parent.appendChild(piBlocks);
 			var paymentInvites = getPaymentInvites();
+			// Go through all paymentInvites, add one block for each
 			for (var i=0; i<paymentInvites.length; i++) {
 			  	paymentInvite = paymentInvites[i];
+			  	
 			  	block = document.createElement('div');
 			  	block.setAttribute("class","pi-block-wrapper");
-			  	block.innerHTML = '<div class="pi-block pi-block-status-'+paymentInvite.status.toLowerCase()+'" onclick="window.location.href = \'#payment\'"><h3 class="pi-block-name">'+paymentInvite.firstName+' '+paymentInvite.lastName+'</h3><a  href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="pi-block-cancel" >x</a><h5 class="pi-block-date">'+paymentInvite.date+'</h5><h3 class="pi-block-amount">&euro; '+paymentInvite.amount+'</h3><h5 class="pi-block-status">'+paymentInvite.status+'</h5></div>';
-			  	piBlocks.appendChild(block);
+			  	block.innerHTML = '<div class="pi-block pi-block-status-'+paymentInvite.status.toLowerCase()+'" onclick="window.location.href = \'#payment\'">'
+				  						+'<h3 class="pi-block-name">'+paymentInvite.firstName+' '+paymentInvite.lastName+'</h3>'
+				  						+'<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="pi-block-cancel" >x</a>'
+				  						+'<h5 class="pi-block-date">'+paymentInvite.date+'</h5>'
+				  						+'<h3 class="pi-block-amount">&euro; '+paymentInvite.amount+'</h3>'
+				  						+'<h5 class="pi-block-status">'+paymentInvite.status+'</h5>'
+				  					+
+				  					'</div>';
+			  	
+			  	parent.appendChild(block);
 			}
 			</script>
 	</div> <!-- page -->
