@@ -40,7 +40,7 @@ getPaymentInvites = function () {
 			"lastName": "Smit",
 			"date": "05-10-2014",
 			"amount": "1.00",
-			"status": "Payed"
+			"status": "Invited"
 		},
 		{
 			"firstName": "J.",
@@ -59,6 +59,7 @@ var paymentInvites = getPaymentInvites();
 for (var i=0; i<paymentInvites.length; i++) {
   	paymentInvite = paymentInvites[i];
   	block = document.createElement('div');
-  	block.innerHTML = '<div class="pi-block pi-block-status-'+paymentInvite.status.toLowerCase()+'" onclick="window.location.href = \'#payment\'"><h3 class="pi-block-name">'+paymentInvite.firstName+' '+paymentInvite.lastName+'</h3><span class="date">'+paymentInvite.date+'</span><h3 class="pi-block-amount">&euro; '+paymentInvite.amount+'</h3><span class="pi-block-status">'+paymentInvite.status+'</span></div>';
+  	block.setAttribute("class","pi-block-wrapper");
+  	block.innerHTML = '<div class="pi-block pi-block-status-'+paymentInvite.status.toLowerCase()+'" onclick="window.location.href = \'#payment\'"><h3 class="pi-block-name">'+paymentInvite.firstName+' '+paymentInvite.lastName+'</h3><h5 class="pi-block-date">'+paymentInvite.date+'</h5><h3 class="pi-block-amount">&euro; '+paymentInvite.amount+'</h3><h5 class="pi-block-status">'+paymentInvite.status+'</h5></div>';
   	piBlocks.appendChild(block);
 }
