@@ -1,3 +1,7 @@
+<?php
+	include("INC-header.html");
+?>
+
 <ul data-role="listview" id="invite-payment-form">
 	<li class="big-euro-class">
 		<img src="img/euro-button.png" />
@@ -35,4 +39,9 @@
 		</div>
 	</li>
 </ul>
-<a class="ui-btn" style="width: 100%">Sent Invite</a>
+<br /><br />
+<a href="transaction-list.php" class="ui-btn" style="width: 100%">Sent Invite</a>
+
+
+</body>
+</html>

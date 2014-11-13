@@ -1,35 +1,12 @@
-<html>
-<head>
-	<title>1337 Lions TEST</title>
-	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	
-	<link rel="stylesheet" href="style/invite-overview.css">
-	<link rel="stylesheet" href="style/invite-payment.css">
-	
-	<link rel="stylesheet" href="themes/ing-style-v2.css">
-	<link rel="stylesheet" href="style/style.css">
-	
-</head>
-
-<body>
+<?php 
+	require("INC-header.html");
+?>
 
 	<div data-role="page" >
 	
-		<div data-role="panel" id="mypanel" data-theme="b">
-			<p>Button a</p>
-			<p>Button b</p>
-		</div><!-- /panel -->
-		
-		<div data-role="header" data-position="fixed">
-			<a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Home</a>
-			<h1>Payment invites</h1>
-			<a href="#" id="search" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
-		</div>
+		<?php 
+			require("INC-navbar.html");
+		?>
 		
 		<div class="ui-content">
 			<div class="ui-container">
@@ -40,7 +17,7 @@
 		</div><!-- content -->
 		
 		<div data-role="footer" data-position="fixed">
-			<a class="ui-btn" style="width: 100%" data-transition="slideup" onclick="$('.ui-container').load('sent-invite.html')">New Payment Invite</a>
+			<a class="ui-btn" style="width: 100%" data-transition="slideup" onclick="$('.ui-container').load('sent-invite.php')">New Payment Invite</a>
 		</div>
 		<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
 			<div data-role="header" data-theme="a">
