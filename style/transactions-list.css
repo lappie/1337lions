@@ -54,9 +54,10 @@
 #transaction-list h2 { /* money */
 	font-size: 2em; 
 	position: absolute; 
-	width: 80px; 
+	width: 150px; 
 	right: 10px; 
 	top: 0px; 
+	text-align: right;
 }
 
 #transaction-list  h4 { /* Euro money */
@@ -72,6 +73,9 @@
 	text-decoration: none; 
 }
 
+.invite-li {
+	background-color: #FFB787 !important;
+}
 /***********************************/
 
 .decimals {

@@ -50,35 +50,31 @@
 
 		<div  data-role="navbar">
 			<ul>
-				<a href="transaction-list.html" class="ui-btn-active">In</a>
+				<a href="transaction-list.html" data-transition="slide">In</a>
 				<a href="transaction-list-out.html" data-transition="slide">Out</a>
-				<a href="transaction-list-invites.html">Invites</a>	
+				<a href="transaction-list-invites.html" class="ui-btn-active">Invites</a>	
 			</ul>
 		</div>
-		
-	<ul data-role="listview" id="transaction-list">
-		<li data-role="list-divider">
-			12 November
-		</li>
-		<li>
-			<img src="img/qr-button.png" />
-			<h3>ING</h3>
-			<h2>-&euro;2416.<span class="decimals">24</span></h2>
-		</li>
-		<li data-role="list-divider">
-			1 November
-		</li>
-		<li>
-			<img src="img/qr-button.png" />
-			<h3>Zorgtoeslag</h3>
-			<h2>-&euro;2.<span class="decimals">37</span></h2>
-		</li>
-		<li>
-			<img src="img/qr-button.png" />
-			<h3>Huurtoeslag</h3>
-			<h2>-&euro;6.<span class="decimals">75</span></h2>
-		</li>
-	</ul>
+<ul class="transactions-invites-list" data-role="listview" id="transaction-list">
+	<li data-role="list-divider">
+		12 November
+	</li>
+	<li class="invite-li">
+		<img src="img/qr-button.png" />
+		<h3>P. Jansen</h3>
+		<p><u class="span-underline">Eten voor het sporten</u></p>
+		<h2>-$10.<span class="decimals">00</span></h2>
+	</li>
+	<li data-role="list-divider">
+		11 November
+	</li>
+	<li class="invite-li">
+		<img src="img/qr-button.png" />
+		<h3>J. Pietersen</h3>
+		<p><u class="span-underline">Huur November</u></p>
+		<h2>-$480.<span class="decimals">00</span></h2>
+	</li>
+</ul>
 <!--------------- /PAGE CONTENT ------------>
 </div><!-- ui-container -->
 		</div><!-- content -->

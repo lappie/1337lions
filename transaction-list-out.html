@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="style/invite-overview.css">
 	<link rel="stylesheet" href="style/invite-payment.css">
 	
+	
 	<link rel="stylesheet" href="themes/ing-style-v2.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/transactions-list.css">
@@ -50,35 +51,44 @@
 
 		<div  data-role="navbar">
 			<ul>
-				<a href="transaction-list.html" class="ui-btn-active">In</a>
-				<a href="transaction-list-out.html" data-transition="slide">Out</a>
+				<a href="transaction-list.html" data-transition="slide">In</a>
+				<a href="transaction-list-out.html" class="ui-btn-active" data-transition="slide">Out</a>
 				<a href="transaction-list-invites.html">Invites</a>	
 			</ul>
 		</div>
-		
-	<ul data-role="listview" id="transaction-list">
-		<li data-role="list-divider">
-			12 November
-		</li>
-		<li>
-			<img src="img/qr-button.png" />
-			<h3>ING</h3>
-			<h2>-&euro;2416.<span class="decimals">24</span></h2>
-		</li>
-		<li data-role="list-divider">
-			1 November
-		</li>
-		<li>
-			<img src="img/qr-button.png" />
-			<h3>Zorgtoeslag</h3>
-			<h2>-&euro;2.<span class="decimals">37</span></h2>
-		</li>
-		<li>
-			<img src="img/qr-button.png" />
-			<h3>Huurtoeslag</h3>
-			<h2>-&euro;6.<span class="decimals">75</span></h2>
-		</li>
-	</ul>
+<ul data-role="listview" id="transaction-list">
+	<li data-role="list-divider">
+		12 November
+	</li>
+	<li>
+		<img src="img/qr-button.png" />
+		<h3>AH ToGo</h3>
+		<p><span>Amsterdam Bijlmer</span></p>
+		<h2>-&euro;3.<span class="decimals">24</span></h2>
+	</li>
+	<li>
+		<img src="img/qr-button.png" />
+		<h3>Starbucks</h3>
+		<p><u class="span-underline">London, United Kingdom</u></p>
+		<h2>-$2.<span class="decimals">24</span></h2>
+		<h4>&euro;1.<span class="decimals">68</span></h4>
+	</li>
+	<li data-role="list-divider">
+		11 November
+	</li>
+	<li>
+		<img src="img/qr-button.png" />
+		<h3>AH ToGo</h3>
+		<p><span>Amsterdam Bijlmer</span></p>
+		<h2>-&euro;2.<span class="decimals">37</span></h2>
+	</li>
+	<li>
+		<img src="img/qr-button.png" />
+		<h3>Julia's</h3>
+		<p><span>Amsterdam Amstel</span></p>
+		<h2>-&euro;6.<span class="decimals">75</span></h2>
+	</li>
+</ul>
 <!--------------- /PAGE CONTENT ------------>
 </div><!-- ui-container -->
 		</div><!-- content -->
