@@ -33,9 +33,15 @@
 	<li>
 		<img src="img/qr-button.png" />
 		<h3>Starbucks</h3>
+<<<<<<< HEAD
 		<p><u class="span-underline">New York, USA</u></p>
 		<h2>-$2.<span class="decimals">24</span></h2>
 		<h4>&euro;1.<span class="decimals">68</span></h4>
+=======
+		<p><u class="span-underline">London, United Kingdom</u></p>
+		<h2>-£2.<span class="decimals">24</span></h2>
+		<h4>&euro;2,53.<span class="decimals">68</span></h4>
+>>>>>>> origin/master
 	</li>
 	<li data-role="list-divider">
 		11 November
