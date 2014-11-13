@@ -55,25 +55,31 @@
 	font-size: 2em; 
 	position: absolute; 
 	width: 80px; 
-	right: 0px; 
+	right: 10px; 
+	top: 0px; 
 }
 
 #transaction-list  h4 { /* Euro money */
 	position: absolute; 
 	right: 0px; 
 	width: 80px; 
-	top: 20px; 
+	top: 45px; 
 }
 
 .span-underline{ /* Location */
 	font-size: 0.9em; 
-	border-bottom: 1px dashed #999;
+	border-bottom: 15px dashed #999;
 	text-decoration: none; 
 }
 
 /***********************************/
 
-span .decimals {
+.decimals {
 	font-size: 10px; 
-	color: red; 
+	vertical-align: text-top;
+}
+
+.decimals-small {
+	font-size: 7px; 
+	vertical-align: text-top;
 }
