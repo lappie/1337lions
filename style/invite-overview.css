@@ -1,0 +1,54 @@
+.pi-block-wrapper {
+	width: 50%; 
+	float: left; 
+}
+
+.pi-block {
+	margin:10px;
+	padding:10px;
+	height:250px; 
+	background-color:  rgba(255,102,000,1.0); 
+	color: white;
+	font-size:18px;
+}
+
+.pi-block h3{
+	padding:0;
+	margin:0;
+	text-shadow: none;
+}
+
+.pi-block h5{
+	padding:0;
+	margin:0;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+.pi-block-status-payed{
+	background-color:  rgba(255,102,000,0.6); 
+}
+
+.pi-block .pi-block-name {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.pi-block .pi-block-amount {
+	margin-top:25px;
+	font-size: 40px;
+	font-weight: bold;
+	width:100%;
+	text-align: center;
+}
+
+.pi-block .pi-block-date {
+	margin:20px 0 20px 0;
+}
+
+.pi-block .pi-block-status {
+	margin-top:6px;
+	width:100%;
+	text-align: center;
+	font-size: 22px;
+}
