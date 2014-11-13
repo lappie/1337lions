@@ -52,3 +52,17 @@
 	text-align: center;
 	font-size: 22px;
 }
+
+.ui-page-theme-a .pi-block a, .ui-bar-a .pi-block a, .ui-body-a .pi-block a, .ui-group-theme-a .pi-block a {
+	color:#FFFFFF;
+	float:right;
+	margin-top:-30px;
+	margin-right:5px;
+	font-size: 22px;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.ui-page-theme-a .pi-block a:hover, .ui-bar-a .pi-block a:hover, .ui-body-a .pi-block a:hover, .ui-group-theme-a .pi-block a:hover {
+	color:#000066;
+}
