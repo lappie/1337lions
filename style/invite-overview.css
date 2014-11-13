@@ -1,0 +1,14 @@
+.pi-block {
+	width: 250px; 
+	height:250px; 
+	float: left; 
+	margin-left: 50px; 
+	border: 1px solid orange; 
+	
+	padding: 10px; 
+	
+	background-color:  rgb(255,102,000); 
+	color: white;
+	
+	margin-top: 20px; 
+}

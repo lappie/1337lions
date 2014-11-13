@@ -2,21 +2,6 @@ html * {
 	font-family: 'Open Sans' !important;
 }
 
-.pi-block {
-	width: 250px; 
-	height:250px; 
-	float: left; 
-	margin-left: 50px; 
-	border: 1px solid orange; 
-	
-	padding: 10px; 
-	
-	background-color:  rgb(255,102,000); 
-	color: white;
-	
-	margin-top: 20px; 
-}
-
 .ui-container {
 	width: 644px; 
 	margin: 0px auto; 
