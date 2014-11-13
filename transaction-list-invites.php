@@ -17,7 +17,7 @@
 		<!-------------- PAGE CONTENT ----------->
 			
 		<?php 
-			require("INC-transaction-list-header.html");
+			require("INC-transaction-list-invites-header.html");
 		?>
 		
 <ul class="transactions-invites-list" data-role="listview" id="transaction-list">
@@ -25,24 +25,19 @@
 		12 November
 	</li>
 	<li class="invite-li">
-		<a data-transition="slideup" class="invite_link" onclick="$('.ui-container').load('respond_to_inviteJansen.php')">
 		<img src="img/qr-button.png" />
 		<h3>P. Jansen</h3>
-		<p><u class="span-underline">Voorgeschoten lunch</u></p>
+		<p><u class="span-underline">Eten voor het sporten</u></p>
 		<h2>-$10.<span class="decimals">00</span></h2>
-		</a>
 	</li>
-	
 	<li data-role="list-divider">
 		11 November
 	</li>
 	<li class="invite-li">
-		<a data-transition="slideup" class="invite_link" onclick="$('.ui-container').load('respond_to_invitePietersen.php')">
 		<img src="img/qr-button.png" />
 		<h3>J. Pietersen</h3>
 		<p><u class="span-underline">Huur November</u></p>
 		<h2>-$480.<span class="decimals">00</span></h2>
-		</a>
 	</li>
 </ul>
 <!--------------- /PAGE CONTENT ------------>

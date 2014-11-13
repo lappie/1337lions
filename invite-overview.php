@@ -12,12 +12,15 @@
 		<div class="ui-content">
 			<div class="ui-container">
 				<!--<script>$('.ui-container').load('sent-invite.html')</script>-->
-                <div id="header-title">People that owe me money</div>
-                    <a class="ui-btn" style="width: 360px; background-color: #ff6600; text-shadow: none; margin-left:auto; margin-right:auto" data-transition="slideup" onclick="$('.ui-container').load('sent-invite.php')">New Payment Invite</a>
+
 				<div id="invite-overview"></div>
 			</div><!-- ui-container -->
 		</div><!-- content -->
-	
+		
+		<div data-role="footer" data-position="fixed">
+			<a class="ui-btn" style="width: 100%" data-transition="slideup" onclick="$('.ui-container').load('sent-invite.php')">New Payment Invite</a>
+		</div>
+
 		<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
 			<div data-role="header" data-theme="a">
 			<h1>Delete Invite?</h1>
@@ -28,6 +31,7 @@
 				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow" onclick="console.log(popupFor)">Yes</a>
 			</div>
 		</div>
+
 		<script>
 			/* Everything within data-role is used by jquery mobile. Therefore, this script should be within the data-role div */
 			getPaymentInvites = function () {

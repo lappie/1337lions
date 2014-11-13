@@ -66,11 +66,3 @@
 .ui-page-theme-a .pi-block a:hover, .ui-bar-a .pi-block a:hover, .ui-body-a .pi-block a:hover, .ui-group-theme-a .pi-block a:hover {
 	color:#000066;
 }
-
-#header-title {
-    width: 100%;
-    text-align: center;
-    color: #ff6600;
-    font-size: 26px;
-    margin-bottom: 10px;
-}

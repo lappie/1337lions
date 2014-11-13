@@ -11,7 +11,7 @@
 	<li>
 		<img src="img/person-button.png" />
 		<div class="full_width">
-			<h5>Name</h5>
+			<h5>Naam</h5>
 			<input type="text" value="J.J. Valkenburg" />
 		</div>
 		<img src="img/addressbook-button.png" style="float: right"/>
@@ -19,7 +19,7 @@
 	<li>
 		<img src="img/bankaccount-button.png" />
 		<div class="full_width">
-			<h5>Account number</h5>
+			<h5>Rekeningnummer</h5>
 			<input type="text" value="NL12 INGB 000 123 45 67"></input>
 		</div>
 		<img src="img/qr-button.png" style="float: right"/>
@@ -27,20 +27,20 @@
 	<li>
 		<img src="img/comment-button.png" />
 		<div class="full_width">
-			<h5>Message</h5>
+			<h5>Mededeling</h5>
 			<input type="text" value="Huur" placeholder="Maximaal 140 tekens"></input>
 		</div>
 	</li>
 	<li>
 		<img src="img/schedule-button.png" />
 		<div class="full_width">
-			<h5>Schedule</h5>
+			<h5>Inplannen</h5>
 			<input type="text" value="13 november 2014 - Maandelijks"></input>
 		</div>
 	</li>
 </ul>
 <br /><br />
-<a href="invite-overview.php" class="ui-btn" style="width: 100%">Send Invite</a>
+<a href="invite-overview.php" class="ui-btn" style="width: 100%">Sent Invite</a>
 
 
 </body>

@@ -32,11 +32,3 @@
 	width: 60%;
 	border: 0 none;
 }
-
-.invite_link {
-	background-color: #FFB787;
-}
-
-.invite_li .ui-page-theme-a, .invite_li .ui-btn, .invite_li .ui-bar-a, .invite_li .ui-btn, .invite_li .ui-body-a, .invite_li .ui-btn, .invite_li .ui-group-theme-a, .invite_li .ui-btn, .invite_li .ui-btn.ui-btn-a, .invite_li .ui-page-theme-a, .invite_li .ui-btn:visited, .invite_li .ui-bar-a, .invite_li .ui-btn:visited, .invite_li .ui-body-a, .invite_li .ui-btn:visited, .invite_li .ui-group-theme-a, .invite_li .ui-btn:visited, .invite_li .ui-btn, .invite_li .ui-btn-a:visited {
-	background-color: #FFB787;
-}
