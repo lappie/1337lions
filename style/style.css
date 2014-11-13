@@ -11,3 +11,52 @@ html * {
 	background-color: #D8D8D8 !important;
 	padding: 3px !important; 
 }
+
+.ui-page-theme-a .ui-bar-inherit {
+	background:#222222;
+	border-bottom: 0;
+}
+
+.ui-btn-left, .ui-btn.ui-icon-bars, .ui-btn-icon-left{
+	background: none;
+	border: none;
+	text-shadow: none;
+	color:#FFF;
+}
+
+.ui-btn-left:hover, .ui-btn.ui-icon-bars:hover, .ui-btn-icon-left:hover {
+	background: #FF6600;
+	border: none;
+	text-shadow: none;
+	color:#FFF;
+}
+
+.ui-btn-left:active, .ui-btn.ui-icon-bars:active, .ui-btn-icon-left:active {
+	box-shadow: none;
+}
+
+#search, .ui-btn-right, .ui-btn, .ui-icon-search, .ui-btn-icon-left {
+	background: none;
+	border: none;
+	text-shadow: none;
+	color:#FFF;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.ui-body-b, .ui-page-theme-b .ui-body-inherit, .ui-bar-b .ui-body-inherit, .ui-body-b .ui-body-inherit, .ui-group-theme-b .ui-body-inherit, .ui-panel-page-container-b {
+	background: #333;
+	text-shadow: none;
+	color:#FFF;
+}
+
+.ui-footer .ui-btn {
+	background: #FF6600;
+	text-shadow: none;
+	color:#FFF;
+	border:0;
+	margin:0;
+	padding:14px 0 14px 0;
+}
