@@ -7,8 +7,14 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="style/style.css">
+	
+	<link rel="stylesheet" href="style/invite-payment.css">
+	
+	
 	<link rel="stylesheet" href="themes/ing-style-v2.css">
+	<link rel="stylesheet" href="style/style.css">
+	
+	
 </head>
 <body>
 
@@ -22,12 +28,12 @@
 		<div data-role="header" data-position="fixed">
 			<a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Home</a>
 			<h1>Payment invites</h1>
-			<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+			<a href="#" id="search" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
 		</div>
 		
 		<div class="ui-content">
 			<div class="ui-container">
-				<script>$('.ui-container').load('invite-overview.html')</script>
+				<script>$('.ui-container').load('sent-invite.html')</script>
 
 			</div><!-- ui-container -->
 		</div><!-- content -->

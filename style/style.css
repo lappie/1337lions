@@ -21,3 +21,8 @@ html * {
 	width: 644px; 
 	margin: 0px auto; 
 }
+
+.ui-li-divider {
+	background-color: #D8D8D8 !important;
+	padding: 3px !important; 
+}

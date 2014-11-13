@@ -1,0 +1,34 @@
+#invite-payment-form  li {
+	padding: 0px; 
+}
+
+#invite-payment-form  img {
+	float: left; 
+	position: relative;
+	padding-top: 6px; 
+	padding-right: 10px; 
+}
+	
+#invite-payment-form  input {
+	width: 100%;
+	min-height: 0px;
+}
+
+#invite-payment-form  div.full_width {
+	width: 70%;
+	float: left;
+}
+
+#invite-payment-money {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#invite-payment-money {
+	padding: 0px;
+}
+
+.big-euro-class .ui-input-text {
+	width: 60%;
+	border: 0 none;
+}
