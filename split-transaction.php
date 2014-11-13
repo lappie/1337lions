@@ -57,14 +57,14 @@
 	<li>
 		<img src="img/comment-button.png" />
 		<div class="full_width">
-			<h5>Mededeling</h5>
+			<h5>Message</h5>
 			<input type="text" value="Eten Treeswijkhoeve" placeholder="Maximaal 140 tekens"></input>
 		</div>
 	</li>
 	<li>
 		<img src="img/schedule-button.png" />
 		<div class="full_width">
-			<h5>Inplannen</h5>
+			<h5>Schedule</h5>
 			<input type="text" value="13 november 2014 - Eenmalig"></input>
 		</div>
 	</li>
