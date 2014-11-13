@@ -28,14 +28,14 @@
 		<img src="img/comment-button.png" />
 		<div class="full_width">
 			<h5>Message</h5>
-			<input type="text" value="Huur" placeholder="Maximaal 140 tekens"></input>
+			<input type="text" value="Huur" placeholder="Max 140 characters"></input>
 		</div>
 	</li>
 	<li>
 		<img src="img/schedule-button.png" />
 		<div class="full_width">
 			<h5>Schedule</h5>
-			<input type="text" value="13 november 2014 - Maandelijks"></input>
+			<input type="text" value="13th of November 2014 - Monthly"></input>
 		</div>
 	</li>
 </ul>
