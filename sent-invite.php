@@ -40,7 +40,7 @@
 	</li>
 </ul>
 <br /><br />
-<a href="invite-overview.php" class="ui-btn" style="width: 100%">Sent Invite</a>
+<a href="invite-overview.php" class="ui-btn" style="width: 100%">Send Invite</a>
 
 
 </body>

@@ -33,7 +33,7 @@
 	<li>
 		<img src="img/qr-button.png" />
 		<h3>Starbucks</h3>
-		<p><u class="span-underline">London, United Kingdom</u></p>
+		<p><u class="span-underline">New York, USA</u></p>
 		<h2>-$2.<span class="decimals">24</span></h2>
 		<h4>&euro;1.<span class="decimals">68</span></h4>
 	</li>
